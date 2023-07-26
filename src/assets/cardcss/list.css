@@ -1,0 +1,236 @@
+.list{
+    width: 20%;
+    position: absolute;
+    bottom: -25%;
+    right: 6.4%;
+    top: 10%;
+    color: #fff;
+    background: rgba(0,0,0,0.2);
+    transition: all 0.2s ease-out;
+    border-radius: 10px;
+    z-index: 10;
+    /* display: none; */
+    height: 640px;
+}
+
+.list.show{
+    bottom: 3%;
+    display: block;
+    cursor: pointer;
+}
+
+.list .header{
+    width: 100%;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.list .header i{
+    font-size: 1.7rem;
+}
+
+.list .header > div{
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+}
+.list .header > div span{
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+.list ul{
+    width: 100%;
+    height: 550px;
+    overflow-y: scroll;
+}
+
+.list ul::-webkit-scrollbar{
+    width: 0px;
+}
+ .list ul li{
+    width: 100%;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+ }
+
+ .list ul li:hover{
+    background: rgba(rgba(92, 182, 218));
+ }
+
+ .list ul li .row p{
+    font-size: 0.85rem;
+ }
+ .list .duration{
+    font-size: 0.9rem;
+ }
+ .list ul li.playing{
+    background: rgba(rgba(92, 182, 218, 0.3));
+ }
+
+
+
+@media only screen and (max-width:600px){
+    .list{
+        width: 100%;
+        position: relative;
+        bottom: -25%;
+        left: 0px;
+        top: 0;
+        color: #fff;
+        background: rgba(0,0,0,0.8);
+        transition: all 0.2s ease-out;
+        border-radius: 10px;
+        z-index: 10;
+        display: none;
+    }
+
+    .list.show{
+        bottom: 16%;
+        display: block;
+        cursor: pointer;
+    }
+
+    .list .header{
+        width: 100%;
+        padding: 15px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .list .header i{
+        font-size: 1.7rem;
+    }
+
+    .list .header > div{
+        display: flex;
+        justify-content: center;
+        gap: 3px;
+    }
+    .list .header > div span{
+        font-size: 1rem;
+        text-transform: capitalize;
+    }
+
+    .list ul{
+        width: 100%;
+        height: 250px;
+        overflow-y: scroll;
+    }
+
+    .list ul::-webkit-scrollbar{
+        width: 0px;
+    }
+     .list ul li{
+        width: 100%;
+        padding: 10px 30px;
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+        border-bottom: 1px solid #eee;
+     }
+
+     .list ul li:hover{
+        background: rgba(rgba(92, 182, 218));
+     }
+
+     .list ul li .row p{
+        font-size: 0.85rem;
+     }
+     .list .duration{
+        font-size: 0.9rem;
+     }
+     .list ul li.playing{
+        background: rgba(rgba(92, 182, 218, 0.3));
+     }
+}
+
+@media only screen and ((min-width:600px) and (max-width:768px)){
+    .list{
+        width: 100%;
+        position: relative;
+        bottom: -25%;
+        left: 0px;
+        top: 0;
+        color: #fff;
+        background: rgba(0,0,0,0.8);
+        transition: all 0.2s ease-out;
+        border-radius: 10px;
+        z-index: 10;
+        display: none;
+    }
+
+    .list.show{
+        bottom: 16%;
+        display: block;
+        cursor: pointer;
+    }
+
+    .list .header{
+        width: 100%;
+        padding: 15px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .list .header i{
+        font-size: 1.7rem;
+    }
+
+    .list .header > div{
+        display: flex;
+        justify-content: center;
+        gap: 3px;
+    }
+    .list .header > div span{
+        font-size: 1rem;
+        text-transform: capitalize;
+    }
+
+    .list ul{
+        width: 100%;
+        height: 250px;
+        overflow-y: scroll;
+    }
+
+    .list ul::-webkit-scrollbar{
+        width: 0px;
+    }
+     .list ul li{
+        width: 100%;
+        padding: 10px 30px;
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+        border-bottom: 1px solid #eee;
+     }
+
+     .list ul li:hover{
+        background: rgba(rgba(92, 182, 218));
+     }
+
+     .list ul li .row p{
+        font-size: 0.85rem;
+     }
+     .list .duration{
+        font-size: 0.9rem;
+     }
+     .list ul li.playing{
+        background: rgba(rgba(92, 182, 218, 0.3));
+     }
+}
+
+@media only screen and ((min-width:768px) and (max-width:992px)){
+    .list{
+        display: none;
+    }
+}
+@media only screen and ((min-width:992px) and (max-width:1250px)){
+    .list{
+        display: none;
+    }
+}
